@@ -1,8 +1,11 @@
 *** Settings ***
-Library   ICOLibrary
 Resource  ../Common/Common.robot
-Variables  google_locator.robot
+Resource  Google_Locator.robot
 
 *** Keywords ***
 Verify Title On Page
-    verify title page
+    Verify Title Page
+
+Input Text On Page
+    [Arguments]  ${txt_google}
+    Input Text Element  ${element_input}    ${txt_google}

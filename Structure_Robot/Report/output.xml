@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0.4 (Python 3.7.0 on win32)" generated="20190601 09:22:22.439">
+<suite id="s1" name="Test Suites" source="D:\s2retail\Structure_Robot\Test Suites">
+<suite id="s1-s1" name="Google" source="D:\s2retail\Structure_Robot\Test Suites\Google">
+<suite id="s1-s1-s1" name="Google" source="D:\s2retail\Structure_Robot\Test Suites\Google\Google.robot">
+<kw name="Open Browser On Page" library="Common" type="setup">
+<kw name="Open Browser" library="ICOLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20190601 09:22:24.703" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com'.</msg>
+<status status="PASS" starttime="20190601 09:22:24.703" endtime="20190601 09:22:41.269"></status>
+</kw>
+<kw name="Maximize Browser Window" library="ICOLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20190601 09:22:41.270" endtime="20190601 09:22:42.651"></status>
+</kw>
+<status status="PASS" starttime="20190601 09:22:24.702" endtime="20190601 09:22:42.651"></status>
+</kw>
+<test id="s1-s1-s1-t1" name="Test Case 01: Check Title On Page">
+<kw name="Given User Verify Title On Page" library="Google_Pages">
+<kw name="Verify Title On Page" library="Google_Actions">
+<kw name="Verify Title Page" library="ICOLibrary">
+<doc>Verify title on page current</doc>
+<msg timestamp="20190601 09:22:42.673" level="INFO">Google</msg>
+<status status="PASS" starttime="20190601 09:22:42.655" endtime="20190601 09:22:42.673"></status>
+</kw>
+<status status="PASS" starttime="20190601 09:22:42.654" endtime="20190601 09:22:42.674"></status>
+</kw>
+<status status="PASS" starttime="20190601 09:22:42.654" endtime="20190601 09:22:42.674"></status>
+</kw>
+<kw name="When User Input Text On Page Google" library="Google_Pages">
+<arguments>
+<arg>${1_1.text_google}</arg>
+</arguments>
+<kw name="Input Text On Page" library="Google_Actions">
+<arguments>
+<arg>${txt_google}</arg>
+</arguments>
+<kw name="Input Text Element" library="ICOLibrary">
+<doc>Input text on page</doc>
+<arguments>
+<arg>${element_input}</arg>
+<arg>${txt_google}</arg>
+</arguments>
+<status status="PASS" starttime="20190601 09:22:42.676" endtime="20190601 09:22:43.498"></status>
+</kw>
+<status status="PASS" starttime="20190601 09:22:42.676" endtime="20190601 09:22:43.498"></status>
+</kw>
+<status status="PASS" starttime="20190601 09:22:42.675" endtime="20190601 09:22:43.498"></status>
+</kw>
+<doc>Test Result About Title</doc>
+<tags>
+<tag>1_1_2</tag>
+<tag>Google_Management 1_1</tag>
+</tags>
+<status status="PASS" starttime="20190601 09:22:42.652" endtime="20190601 09:22:43.499" critical="yes"></status>
+</test>
+<kw name="Clean Up Data" library="Common" type="teardown">
+<kw name="Close Browser" library="ICOLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20190601 09:22:43.510" endtime="20190601 09:22:46.170"></status>
+</kw>
+<status status="PASS" starttime="20190601 09:22:43.509" endtime="20190601 09:22:46.170"></status>
+</kw>
+<doc>Check Result On Page</doc>
+<status status="PASS" starttime="20190601 09:22:22.636" endtime="20190601 09:22:46.170"></status>
+</suite>
+<status status="PASS" starttime="20190601 09:22:22.563" endtime="20190601 09:22:46.176"></status>
+</suite>
+<status status="PASS" starttime="20190601 09:22:22.446" endtime="20190601 09:22:46.179"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0">1_1_2</stat>
+<stat pass="1" fail="0">Google_Management 1_1</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Test Suites">Test Suites</stat>
+<stat pass="1" fail="0" id="s1-s1" name="Google">Test Suites.Google</stat>
+<stat pass="1" fail="0" id="s1-s1-s1" name="Google">Test Suites.Google.Google</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,5 +1,5 @@
 from SeleniumLibrary import SeleniumLibrary
-from .keywords import TableKeyword
+from .Keywords import TableKeyword
 
 __version__ = '1.0.0'
 

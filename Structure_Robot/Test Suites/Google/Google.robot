@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation  Check Result On Page
-Resource   ../../Pages/google_pages.robot
-Variables  ../../Resource/Data/Google.yaml
+Resource   ../../Pages/Google_Pages.robot
+Variables  ../../Resources/Data/Google.yaml
 
 Suite Setup      Open Browser On Page
 Suite Teardown   Clean Up Data
@@ -11,5 +11,5 @@ Force Tags   Google_Management 1_1
 Test Case 01: Check Title On Page
     [Documentation]  Test Result About Title
     [Tags]  1_1_2
-    User Verify Title On Page
-
+    Given User Verify Title On Page
+    When User Input Text On Page Google     ${1_1.text_google}

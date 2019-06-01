@@ -17,6 +17,7 @@ class TableKeyword(LibraryComponent):
         """Verify title on page current"""
         try:
             if self.driver.title != "":
+                print(self.driver.title)
                 return self.driver.title
             else:
                 raise ElementNotVisibleException
@@ -24,10 +25,10 @@ class TableKeyword(LibraryComponent):
             print(str(err))
 
     @keyword
-    def input_text(self, locator, text_input):
+    def input_text_element(self, locator, text_input):
         """Input text on page"""
         try:
-            element = self.driver.find_element(locator)
+            element = self.driver.find_element_by_name(locator)
             element.send_keys(text_input)
         except ElementNotVisibleException as err:
             print(str(err))

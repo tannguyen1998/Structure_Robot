@@ -5,7 +5,8 @@ Resource  Common_Actions.robot
 
 *** Keywords ***
 Open Browser On Page
-    open browser  ${URL}    chrome
+    [Arguments]   ${url}    ${driver}
+    open browser  ${url}   ${driver}
     maximize browser window
 
 Clean Up Data

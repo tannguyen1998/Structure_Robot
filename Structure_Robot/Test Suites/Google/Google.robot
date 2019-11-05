@@ -1,9 +1,9 @@
 *** Settings ***
 Documentation  Check Result On Page
-Resource   ../../Pages/Google_Pages.robot
-Variables  ../../Resources/Data/Google.yaml
+Resource   ../../Resources/Pages/Google_Pages.robot
+Variables  ../../Data/Google.yaml
 
-Suite Setup      Open Browser On Page
+Suite Setup      Open Browser On Page   ${1_1.url}  ${1_1.driver}
 Suite Teardown   Clean Up Data
 Force Tags   Google_Management 1_1
 
